@@ -11,7 +11,7 @@ class DPAmodel(nn.Module):
                  num_layer=3, num_layer_enc=None, hidden_dim=500, noise_dim=None, 
                  dist_enc="deterministic", dist_dec="deterministic", resblock=True,
                  encoder_k=False, bn_enc=False, bn_dec=False, out_act=None, 
-                 linear=False, lin_dec=True, lin_bias=False):
+                 linear=False, lin_dec=True, lin_bias=True):
         super().__init__()
         self.data_dim = data_dim
         self.latent_dim = latent_dim

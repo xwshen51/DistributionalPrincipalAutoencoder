@@ -1,6 +1,6 @@
 # Distributional Principal Autoencoder
 
-Distributional Principal Autoencoder (DPA) is a nonlinear dimension reduction method proposed in the paper "[*Distributional Principal Autoencoders*]()" by Xinwei Shen and Nicolai Meinshausen. This directory contains the Python implementation of DPA.
+Distributional Principal Autoencoder (DPA) is a nonlinear dimension reduction method proposed in the paper "[*Distributional Principal Autoencoders*](https://arxiv.org/abs/2404.13649)" by Xinwei Shen and Nicolai Meinshausen. This directory contains the Python implementation of DPA.
 
 
 ## Installation
