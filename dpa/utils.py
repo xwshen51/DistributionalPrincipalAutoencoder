@@ -1,9 +1,17 @@
 import os
 import torch
+import numpy as np
 
 def make_folder(path):
     if not os.path.exists(path):
         os.makedirs(path)
+
+def num2onehot(a):
+    if not torch.is_tensor(a):
+        a = torch.tensor(a)
+    b = torch.zeros((a.shape[0], int(a.max()) + 1))
+    b[np.arange(a.shape[0]), a.int()] = 1
+    return b
 
 def onehot2num(a):
     return torch.argmax(a, dim=1)
